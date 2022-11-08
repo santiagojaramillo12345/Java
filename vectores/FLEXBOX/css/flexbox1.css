@@ -1,0 +1,63 @@
+.cabeza{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caja{
+    border: 1px solid;
+    width: 500px;
+    margin: 20px 50px;
+    text-align: center;
+ 
+}
+
+.logo1{
+    width: 150px;
+    height: 60px;
+}
+
+.logo2{
+    width: 700px;
+    height: 40px;
+    margin: 30px 0px;
+    display: block;
+    text-align: center;
+    
+}
+
+.container{
+    display: flex;
+    margin: 50px 0px;
+}
+
+.cuadro1{
+    border: 1px solid;
+    width: 50%;
+    text-align: center;
+    
+}
+
+.texto{
+    padding: 350px 50px 0px 50px;
+    text-align: justify;
+}
+
+.cuadro2{
+    border: 1px solid;
+    width: 50%;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+.pie{
+    border: 1px solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img{
+    width: 23%;
+    height: 150px;
+    margin: 5px;
+}

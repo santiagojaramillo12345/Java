@@ -1,0 +1,124 @@
+Algoritmo ejercicio_2
+
+
+//2. Se tiene una cantidad N de personas y por cada una de ellas se maneja Identificación , sexo , edad , bebida preferida y ciudad donde reside 
+//. Hacer un algoritmo que calcule e imprima los siguientes datos : Cantidad de personas que viven en Medellín y toman Coca Cola Los nombres de los 
+//hombres , mayores de edad que toman Pepsi Cola y viven en Cali Cantidad de personas encuestadas - Porcentaje de personas que toman Manzana y viven
+//en Bogota en relación a todas las personas encuestadas //-Promedio de edad de las mujeres que toman// Naranjada y viven en Cartagena
+
+
+
+
+definir n,sexo,id,gaseosa,residencia,contador,contadorA,contadorB,contadorC Como Entero
+
+
+escribir "digite la cantiadad de personas"
+leer n
+contador=0
+contadorA=0
+contadorB=0
+contadorC=0
+
+
+Para k <- 1 Hasta n  Con Paso 1 Hacer
+	escribir " digite si identificacion"
+	leer id
+	escribir "digite su sexo"
+	escribir "1 masculino"
+	escribir "2 femenino"
+	leer sexo
+	
+	escribir "digite su edad"
+	leer edad
+	
+	
+	escribir "digite su gaseosa preferida "
+	escribir "1 cocacola"
+	escribir "2 pesicola"
+	escribir "3 manzana "
+	escribir "4 naranjada "
+	escribir "otra"
+	leer gaseosa
+	
+	escribir "digite su lugar de recidencia actual  "
+	
+	Escribir "1 medellin"
+	Escribir "2 cali"
+	Escribir  "3 bogota"
+	Escribir "4 cartajena"
+	Escribir  "5 otro"
+	
+	
+	leer recidencia
+	
+	si gaseosa==1 y residencia==1 Entonces
+		contador=contador+1
+	sino 
+		si gaseosa==2 y recidencia==2 y edad > 17 y sexo ==1 entonces 
+			
+			contadorA=contadorA+1
+	   sino
+			
+			
+			
+		   si  gaseosa==3 y recidente == 3   Entonces
+			   contadorB=contadorB+1
+			sino
+				
+				si gaseosa==4 y recidete==4 Entonces
+					contadorC=contadorC+1
+					
+					
+				FinSi
+				
+				
+				
+			FinSi
+		FinSi
+	FinSi
+	
+
+
+	
+	
+	
+Fin Para
+
+
+
+escribir "la cantidad de personas que toman gaseosa son " ,contador
+escribir "la cantiada de personas que toman pesicola y son de cali son de ",contadorA
+
+
+
+
+
+
+suma =contador+contadorC+contadorA+contadorB
+
+promedio=suma*contadorC/100
+
+
+porcentaje=(contadorC*n)/100
+
+escribir "El porcentaje de personas que toman Manzana y viven Bogota son de el ",porcentaje
+
+
+
+
+
+escribir "el promedio de mujeres que toma narajanda y son de cartajena son de " ,promedio
+
+
+
+
+
+
+
+
+
+
+
+
+
+FinAlgoritmo
